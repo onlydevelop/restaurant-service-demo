@@ -1,7 +1,12 @@
 package com.example.microservices.itemservice;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Item {
     
+    @Id
     private long id;
     private String name;
     private int price;
